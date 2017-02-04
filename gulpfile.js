@@ -9,7 +9,7 @@ gulp.task('default', () => {
       const end = computeDuration((Number(second)+3)*1000);
       return (
         `${start},${end}` + "\n" +
-        `>> ${message}` + "\n"
+        message + "\n"
       );
     }))
     .pipe(rename({
